@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.container-user {
+    width: 400px;
+    min-height: 400px;
+    background: #FFF2F9;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+    position: relative;
+}
+
+.container-index {
+    width: 500px;
+    min-height: 400px;
+    background: #FFF2F9;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+    position: relative;
+}
+
+.container-catat {
+    width: 600px;
+    min-height: 500px;
+    background: #FFF2F9;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+    position: relative;
+}
+
+.container-lihat {
+    width: 800px;
+    min-height: 500px;
+    background: #FFF2F9;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+    position: relative;
+}
+ 
+.container-user .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container-index .greeting-text {
+    color: #111;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-left: 40px;
+    margin-top: -10px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container-lihat .lihat-text {
+    color: #111;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: 40px;
+    margin-top: -10px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container-catat .catat-text {
+    color: #111;
+    font-size: 1.3rem;
+    margin-top: -10px;
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: 10px; 
+    font-weight: 600;
+    text-align: center;
+}
+
+.container-index .index-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+ 
+.container-user .login-user .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.container-index .index-user .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.container-catat .catat-user .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.container-lihat .lihat-user .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+ 
+.container-user .login-user .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container-catat .catat-user .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 15px 20px;
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+}
+
+.container-lihat .lihat-user .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 15px 20px;
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+}
+ 
+.container-user .login-user .input-group input:focus, .container-user .login-user .input-group input:valid {
+    border-color: black;
+}
+ 
+.container-user .login-user .input-group .btn {
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 3px 3px 3px  #f04d7e;
+    background: #FFC0D3;
+    outline: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container-index .index-user .input-group .btn-index {
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 3px 3px 3px  #ff7fa5;
+    background: #FFC0D3;
+    outline: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container-index .index-user .input-group .btn-logout {
+    display: block;
+    width: 50%;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 5px 20px;
+    text-align: center;
+    box-shadow: 3px 3px 3px  #ff7fa5;
+    background: #ff5588;
+    outline: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-text-logout {
+    font-weight: 600;
+}
+
+.btn-text {
+    font-weight: 600;
+}
+
+ 
+.container-user .login-user .input-group .btn:hover {
+    background: #FF5C8D;
+}
+ 
+.login-register-text {
+    color: #111;
+    font-weight: 400;
+    font-size: 15px;
+}
+ 
+.login-register-text a {
+    text-decoration: none;
+    color: blue;
+}
+ 
+.container-logout {
+    width: 500px;
+    min-height: 200px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+ 
+.container-logout .login-user .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 20px;
+}
+
+.container-logout .login-user .input-group .btn-index {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 20px;
+}
+ 
+.container-logout .login-user .input-group .btn:hover {
+    background: #FF5C8D;
+}
+
+.footer {
+    font-weight: 600;
+    margin-top: 80px;
+    text-align: center;
+}
+ 
+
+@media (max-width: 430px) {
+    .container-user {
+        width: 300px;
+    }
+}
